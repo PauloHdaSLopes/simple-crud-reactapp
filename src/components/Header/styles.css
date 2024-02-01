@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(216, 127, 10);
+    /* background: linear-gradient(180deg, rgba(196, 99, 21, 0.77) 50%, rgba(0,0,0,0) 100%);  */
+    z-index: 1;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    color: white;
+}
