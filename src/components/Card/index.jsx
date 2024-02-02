@@ -2,6 +2,7 @@ import React from "react";
 
 import Table from "../Table";
 import Button from "../Button"
+import Modal from "../Modal"
 
 import './styles.css'
 
@@ -13,6 +14,7 @@ export default function Card({action, data}){
                 <Button text="Novo" action={action} classname="button primary"/>
             </div>
             <Table data={data}/>
+            <Modal/>
         </div>
     );
 }
