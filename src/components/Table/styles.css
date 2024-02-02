@@ -1,0 +1,38 @@
+.table {
+    border-collapse: collapse;
+    margin: 0px 12px 12px 12px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+    background-color: #ffffff;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
+.table th, td {
+    padding: 12px 15px;
+}
+
+.table tbody td {
+    font-size: medium;
+    text-align: center;
+    margin: 5px;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: whitesmoke;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 5px 0px 5px;
+}
