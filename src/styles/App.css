@@ -1,0 +1,9 @@
+#root {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: rgba(233, 233, 233, 0.993);
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	z-index: 0;
+}
