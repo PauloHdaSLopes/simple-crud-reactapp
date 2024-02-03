@@ -1,10 +1,11 @@
 import React from "react";
-import del from '../../resources/delete.svg'
+import delIcon from '../../resources/delete.svg'
 import edit from '../../resources/edit.svg'
 
 import './styles.css'
 
-export default function Table({data}){
+export default function Table({data, onDeleteClick, onEditClick}){
+
     return (
         <table className="table">
             <thead>
@@ -28,8 +29,8 @@ export default function Table({data}){
                                 <td>{d.renda}</td>
                                 <td>{d.cpf}</td>
                                 <td className="actions">
-                                    <a href="/"><img src={del} alt="delete icon" /></a>
-                                    <a href="/"><img src={edit} alt="edit icon" /></a>
+                                    <a href="/" onClick={(e) => onDeleteClick(e, d.id)}><img src={delIcon} alt="delete icon"/></a>
+                                    <a href="/" onClick={(e) => onEditClick(e, d.id)}><img src={edit} alt="edit icon" /></a>
                                 </td>
                             </tr>
                         )

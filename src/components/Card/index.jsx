@@ -6,15 +6,26 @@ import Modal from "../Modal"
 
 import './styles.css'
 
-export default function Card({action, data}){
+export default function Card({data, formData, onNewClick, modalState, onSubmit, onTextChange, onCancelClick, onDeleteClick, onEditClick}){
     return (
         <div className="card">
             <div className="card-top">
                 <h1 className="card-title">Dados Pessoais</h1>
-                <Button text="Novo" action={action} classname="button primary"/>
+                <Button text="Novo" action={onNewClick} classname="button primary"/>
             </div>
-            <Table data={data}/>
-            <Modal/>
+            <Table 
+                data={data} 
+                onDeleteClick={onDeleteClick}
+                onEditClick={onEditClick}
+            />
+            <Modal 
+                formData={formData}
+                modalState={modalState} 
+                onCloseClick={onNewClick} 
+                onCancelClick={onCancelClick} 
+                onSubmit={onSubmit} 
+                onTextChange={onTextChange}
+            />
         </div>
     );
 }
